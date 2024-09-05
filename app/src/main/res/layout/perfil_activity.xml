@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3C7B5"> <!-- Fundo verde claro suave -->
+
+    <!-- Imagem de perfil -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/borda_perfil"
+        android:contentDescription="@string/app_name"
+        android:elevation="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/home" />
+
+    <!-- Nome -->
+    <TextView
+        android:id="@+id/perfilName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/app_name"
+        android:fontFamily="sans-serif"
+        android:text="Nome da Pessoa"
+        android:textColor="#1B5E20"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- Email -->
+    <TextView
+        android:id="@+id/perfilEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/perfilName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="email@exemplo.com"
+        android:textColor="#4E342E"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"></LinearLayout>
+</RelativeLayout>
+

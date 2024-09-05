@@ -13,7 +13,7 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home);
+        setContentView(R.layout.home_activity);
 
 
         icCupons = findViewById(R.id.ic_promocoes);
@@ -21,7 +21,7 @@ public class HomeActivity extends AppCompatActivity {
         icFavoritos = findViewById(R.id.ic_favoritos);
 
         icCupons.setOnClickListener(v -> {
-            Intent intent = new Intent(HomeActivity.this, Cupons.class);
+            Intent intent = new Intent(HomeActivity.this, PerfilActivity.class);
             startActivity(intent);
             overridePendingTransition(0, 0);
         });

@@ -47,7 +47,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:contentDescription="@string/search"
-                android:src="@drawable/ic_pesquisar" />
+                android:src="@drawable/perfil" />
 
         </LinearLayout>
 
