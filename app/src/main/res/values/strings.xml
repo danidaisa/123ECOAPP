@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">123ECOAPP</string>
     <string name="entrar">Entrar</string>
+    <string name="Perfil">Perfil</string>
+    <string name="HOME">HOME</string>
+    <string name="favorito">favorito</string>
+    <string name="logo123">Logo123Eco</string>
+
 </resources>

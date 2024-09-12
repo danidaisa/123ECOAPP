@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class HomeActivity extends AppCompatActivity {
 
-    ImageView icNovos, icCupons, icPesquisar, icFavoritos, icConta;
+    ImageView  icPerfil, icHome, icFavoritos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,24 +16,24 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.home_activity);
 
 
-        icCupons = findViewById(R.id.ic_promocoes);
-        icPesquisar = findViewById(R.id.ic_pesquisar);
+        icPerfil = findViewById(R.id.ic_perfil);
+        icHome = findViewById(R.id.ic_home);
         icFavoritos = findViewById(R.id.ic_favoritos);
 
-        icCupons.setOnClickListener(v -> {
+        icPerfil.setOnClickListener(v -> {
             Intent intent = new Intent(HomeActivity.this, PerfilActivity.class);
             startActivity(intent);
             overridePendingTransition(0, 0);
         });
 
-        icPesquisar.setOnClickListener(v -> {
-            Intent intent = new Intent(HomeActivity.this, Pesquisar.class);
+        icHome.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this, HomeActivity.class);
             startActivity(intent);
             overridePendingTransition(0, 0);
         });
 
-        icConta.setOnClickListener(v -> {
-            Intent intent = new Intent(HomeActivity.this, Conta.class);
+        icFavoritos.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this, MainActivity.class);
             startActivity(intent);
             overridePendingTransition(0, 0);
         });
